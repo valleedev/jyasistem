@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(../images/pexels-max-rahubovskiy-6527069.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+	/*
+nav{
+	max-width: 900px;
+	margin: auto;
+	background-color: gray;
+	font-size: 17px;
+	margin-top: 50px;
+	margin-bottom: 3em;
+  }
+  
+  .menu-horizontal {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	z-index: 100;
+  }
+  
+  .menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  .menu-horizontal > li:hover{
+	background-color: #444;
+  }
+  
+  .menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 100;
+  }
+  
+  .menu-horizontal li:hover .menu-vertical{
+	display: block;
+  }
+  
+  .menu-vertical li:hover{
+	background-color: black;
+  }
+  
+  .menu-vertical li a{
+	display: block;
+	color: #fff;
+	padding: 15px 15px 20px;
+	text-decoration: none;
+  }*/
+
+  
+nav{
+    background-color: rgba(0, 0, 0, 0.814);
+    align-items: center;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+  }
+  
+  .jyasistem{
+    color: #fff;
+    padding: 15px;
+  }
+  
+  a{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+  }
+  
+  ul li{
+    display: inline;
+    padding: 4px 15px;
+    cursor: pointer;
+  }
+  ul a:hover{
+    background-color:  rgba(16, 134, 207, 0.253) ;
+    transition: .5s ;
+  }
+  
+  
+  .menu-horizontal li:hover .menu-vertical1{
+    display: block;
+  }
+  
+  
+  .menu-horizontal li:hover .menu-vertical2{
+    display: block;
+  }
+  
+  .menu-vertical1{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 170px;
+    background-color: rgba(0, 0, 0, .5);
+    margin-top: 17px;
+    right: 19.5em;
+    text-align: center;
+    z-index: 100;
+  }
+  
+  .menu-vertical2{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 170px;
+    background-color: rgba(0, 0, 0, .5);
+    margin-top: 16px;
+    right: 8.3em;
+    text-align: center;
+    z-index: 100;
+  }
+  
+  .menu-horizontal li:hover .menu-vertical1{
+    display: block;
+  }
+  
+  .menu-horizontal li:hover .menu-vertical2{
+    display: block;
+  }
+  
+  
+  .menu-vertical1 a:hover{
+    background-color: black;
+  }
+  
+  
+  .menu-vertical2 a:hover{
+    background-color: black;
+  }
+  
+  
+  .menu-vertical1 li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  .menu-vertical2 li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  b{
+    background-color: #259 ;
+    padding: 5px 2px;
+  }
+  
+  .exit:hover{
+      background-color: rgba(224, 49, 49, 0.406);
+  }
+  
+  
+
+
+
+.card{
+    border-top: #359 30px solid;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 315px;
+    height: 500px;
+    background: #fff;
+    overflow: hidden;
+    transition: .5s;
+    margin: 15px 55px;
+    display: inline;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(3, 89, 92, .5);
+    transform: translateY(-15px);
+}
+
+.card .head {
+    height: 125px;
+    width: 100%;
+    position: relative;
+}
+
+.card .head .circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #0b6f72 ;
+    bottom: 0;
+
+}
+
+
+.card .head .img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50px;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%);
+
+
+}
+
+.card .head .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.card .description {
+    height: 200px;
+    padding: 40px 20px 20px 20px;
+    border-bottom: solid 1px rgba(6, 74, 76, .18);
+    text-align: center;
+
+}
+
+.card .description h3 {
+    color: #05383a;
+}
+
+.card .description h4 {
+    color: #1c5a5c;
+}
+
+.card .description p {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.card .contact {
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card .contact  a {
+    text-decoration: none;
+    color: #fff;
+    background: #157579;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: .3s;
+
+}
+
+.card .contact  a:hover {
+    background: #0b6164;
+
+}
+
+
+.container-tabla{
+    background-color: aqua;
+    width: 50em;
+    height: auto;
+    overflow: auto;
+    align-content: center;
+    border-radius: 15px;
+    margin-left: 15em;
+    margin-bottom: 6em;
+  }
+
+  .btn {
+    border-radius: 15px;
+  }
+
+  .input{
+    border-radius: 15px;
+  }
+  
+
+	  
+.delete {
+  cursor: pointer;
+    margin-left: 65px;
+	background-image: url("../images/borrar.png");
+	height: 32px; 
+	width:33px;
+	border: hidden;
+    border-radius: 30px;
+}
+
+
+.update {
+  cursor: pointer;
+	background-image: url("../images/recargar.png");
+  background-repeat: no-repeat;
+	height: 32px; 
+	width:33px;
+	border: hidden;
+	margin: 15px;
+}
+
+.whats {
+  cursor: pointer;
+	background-image: url("../images/whatsapp.png");
+  background-repeat: no-repeat;
+	height: 32px; 
+	width:33px;
+	border: hidden;
+	margin: 9px;
+}
+
+
+  
+p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+
+form .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    margin-bottom: 25px;
+    margin-left: 57px;
+    margin-top: 20px;
+    background-color: #359;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+
+form .btn:hover{
+    border: 0;
+	background: #5352ed;
+	cursor: pointer;
+	border: 2px solid #359;
+    background: none;
+    color: #333;
+    font-weight: bold;
+}
+
+form .input{
+outline: none;
+font-size: 14px;
+font-weight: 400;
+color: #333;
+border: 2px solid #359;
+padding: 0 15px;
+height: 35px;
+margin-left: 57px;
+}
+
+a .img{
+    margin-left: 57px;
+}
+
+.container-buscar{
+    margin-left: 1em;
+    margin-top: 8em;
+  }
+
+  p{
+      margin-left: 60px;
+  }
+  
+  .cl{
+    margin-top: 35px;
+
+  }
+
+

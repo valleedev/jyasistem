@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Clientes</title>
+<link rel="stylesheet" href="css/estilosform.css">
+</head>
+
+
+<body>
+
+ <div class="container">
+	<header>Nuevo Cliente</header>
+
+
+<form action="./Insertar_gastos.php" method="post">
+	
+		<div class="form first">
+			<div class="details personal">
+				<span class="title"> </span>
+
+	<div class="fields">
+
+		<div class="input-field">
+	      <label  for="cedula_pk">Cedula</label>
+	      <input type="number" id="cedula_pk" placeholder="Ingrese la cedula" name="cedula_pk" required>
+	   </div>
+
+	  <div class="input-field">
+	  <label for="nombre_completo">Nombre Completo</label>
+	  <input type="text" id="nombre_completo" placeholder="Ingrese su nombre completo" name="nombre_completo" required >
+	 </div>
+
+	 <div class="input-field">
+		<label for="telefono">Telefono</label>
+		<input type="number" id="telefono" placeholder="Ingrese su telefono" name="telefono" required >
+	   </div>
+
+	   <div class="input-field">
+		<label for="correo">Correo</label>
+		<input type="text" id="correo" placeholder="Ingrese su correo electrónico " name="correo" required >
+	   </div>
+
+	   <div class="input-field">
+		<label for="sexo"> Sexo </label>
+        <select name="sexo" >
+          <option value="">Sexo</option>
+          <option>Masculino</option>
+          <option>Femenino</option>
+          <option>Otro</option>
+        </select>
+	  </div>
+
+  
+	  <div class="input-field">
+		<label for="pago">Pago</label>
+		<input type="number" id="pago" placeholder="Ingrese el tipo de pago " name="pago" required >
+	   </div>
+	  
+	  
+      <input  class="buttom" type="submit" value="INSERTAR">
+      <input class="buttom" type="reset" value="CANCELAR">
+ </div>
+</div>
+</div>
+</div>
+  
+</form>
+
+</div>
+
+
+
+</body>
+</html>
+
+

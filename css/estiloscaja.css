@@ -1,0 +1,154 @@
+estiloscaja.css
+/* CSS Document */
+
+body {  
+
+	    
+
+	background-size: 300px 300px;
+	background-size: 300% 300%;
+
+
+	 color:#000;
+	 font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	 font-size: 12px;
+	 font-weight:bold;
+	 padding-left:100px;
+	 padding-right:100px;
+	 }
+
+	
+nav{
+	max-width: 900px;
+	margin: auto;
+	background-color: gray;
+	font-size: 17px;
+	margin-top: 50px;
+	margin-bottom: 3em;
+  }
+  
+  .menu-horizontal {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	z-index: 100;
+  }
+  
+  .menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  .menu-horizontal > li:hover{
+	background-color: #444;
+  }
+  
+  .menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 100;
+  }
+  
+  .menu-horizontal li:hover .menu-vertical{
+	display: block;
+  }
+  
+  .menu-vertical li:hover{
+	background-color: black;
+  }
+  
+  .menu-vertical li a{
+	display: block;
+	color: #fff;
+	padding: 15px 15px 20px;
+	text-decoration: none;
+  }
+  
+  
+
+
+/*Para El diseño de la caja
+/* Se configura el fondo y el tamaño de la caja */
+div 
+{   
+	background-color: white;
+	width: 200px;
+	height: 480px;
+	line-height: 30px;
+	position:relative;
+	left: 30px;
+
+
+/*Para Poner una caja frente a la otra*/
+	display:inline;
+	display:inline-block;
+
+
+ /*Para configurar la caja*/
+
+	margin-top: 10px;
+	margin-left:50px;
+	padding-top:5px;
+	padding-bottom:-10px;
+	padding-right:25px;
+	padding-left:25px;
+	
+/*Para el texto dentro de la caja */ 
+	text-align: center;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	
+
+}
+	
+/*Transformando las imagenes, Las hace más grandes con el cursor. */	
+img:hover {-webkit-transform:scale(1.2);
+			transform:scale(1.2);
+            overflow:hidden;}
+
+p {
+text-align: center; 
+font-family: Arial Black; 
+font-weight: bold; 
+font-size: 40px;
+color: #449;
+ }
+		  
+.delete {
+	background-image: url("../images/borrar.png");
+	height: 32px; 
+	width:33px;
+	border: hidden;
+}
+
+
+.update {
+	background-image: url("../images/recargar.png");
+	height: 32px; 
+	width:33px;
+	border: hidden;
+	margin: 15px;
+}
+
+.whats {
+	background-image: url("../images/whatsapp.png");
+	height: 32px; 
+	width:33px;
+	border: hidden;
+	margin: 9px;
+}
+
+
+.Nombre { 
+	text-align: inherit;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	color: black;
+	text-shadow: 1px 1px 2px black;
+	
+		
+}

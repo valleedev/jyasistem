@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Proveedores</title>
+<link rel="stylesheet" href="css/estilosform.css">
+</head>
+
+
+<body>
+
+	<header>
+		<nav>
+			<h1 class="jyasistem"><b>JyA</b>sistem</h1>
+			<ul class="menu-horizontal" >
+				<li><a href="plantilla.html">INICIO</a></li>
+	
+				<li>
+					<a href="#">INSERTAR</a>
+					<ul class="menu-vertical1">
+						<li class="lista"><a href="Formulario_Insert_ingresos.html">INGRESOS</a></li>
+						<li class="lista"><a href="Formulario_Insert_gastos.html">GASTOS</a></li>
+						<li class="lista"><a href="Formulario_Insert_Clientes.html">CLIENTES</a></li>
+						<li class="lista"><a href="Formulario_insert_contratos.html">CONTRATOS</a></li>
+						<li class="lista"><a href="Formulario_Insert_empleados.html">EMPLEADOS</a></li>
+						<li class="lista"><a href="Formulario_Insert_inventario.html">INVENTARIO</a></li>
+						<li class="lista"><a href="Formulario_Insert_proveedores.html">PROVEEDORES</a></li>
+						<li class="lista"><a href="Formulario_Insert_usuarios.html">USUARIOS</a></li>
+					</ul>
+				</li> 
+	
+				<li>
+					<a href="#">REPORTES</a>
+					<ul class="menu-vertical2">
+						<li class="lista"><a href="Ver_ingresos.php">INGRESOS</a></li>
+						<li class="lista"><a href="Ver_gastos.php">GASTOS</a></li>
+						<li class="lista"><a href="Ver_clientes.php">CLIENTES</a></li>
+						<li class="lista"><a href="Ver_contratos.php">CONTRATOS</a></li>
+						<li class="lista"><a href="ver_caja_empleados.php">EMPLEADOS</a></li>
+						<li class="lista"><a href="ver_caja_inventario.php">INVENTARIO</a></li>
+						<li class="lista"><a href="Ver_proveedores.php">PROVEEDORES</a></li>
+						<li class="lista"><a href="ver_caja_usuarios.php">USUARIOS</a></li>
+					</ul>
+				</li>
+	
+				<li><a class="exit" href="salir.php">SALIR</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+
+ <div class="container">
+	<header>Añadir proveedor</header>
+
+
+<form action="./Insertar_proveedores.php" method="post" enctype="multipart/form-data">
+	
+		<div class="form first">
+			<div class="details personal">
+				<span class="title"> </span>
+
+	<div class="fields">
+
+	   <div class="input-field">
+		<label for="tipo"> Tipo de Proveedor </label>
+        <select name="tipo" >
+          <option value="">Tipo de proveedor </option>
+          <option>Normal</option>
+          <option>Confiable</option>
+          <option>Específico</option>
+		  <option>Convenio</option>
+		  <option>Fabricante</option>
+		  <option>Minorista</option>
+		  <option>Mayorista</option>
+		  <option>Distribuidor</option>
+		  <option>Exportador</option>
+		  <option>Importador</option>
+        </select>
+	 </div>
+
+	  <div class="input-field">
+	  <label for="nombre">Nombre</label>
+	  <input type="text" id="nombre" placeholder="Ingrese el nombre del proveedor" name="nombre" required >
+	 </div>
+
+	 <div class="input-field">
+		<label for="telefono">Teléfono</label>
+		<input type="number" id="telefono" placeholder="Ingrese el # telefónico" name="telefono" required >
+	   </div>
+
+	   <div class="input-field">
+		<label for="direccion">Dirección</label>
+		<input type="text" id="direccion" placeholder="Ingrese la dirección del proveedor " name="direccion" required >
+	   </div>
+  
+	   <div class="input-field">
+		<label for="correo">Correo</label>
+		<input type="text" id="correo" placeholder="Ingrese el correo " name="correo"  >
+	   </div>
+
+	   <div class="input-field">
+		<label for="inventario">Inventario</label>
+		<input type="file" id="inventario" name="inventario" accept=".pdf" required >
+	   </div>
+	  
+	  
+      <input  class="buttom" type="submit" value="INSERTAR">
+      <input class="buttom" type="reset" value="CANCELAR">
+ </div>
+</div>
+</div>
+</div>
+  
+</form>
+
+</div>
+
+
+<footer>
+    <div class="footer">
+        <p>Derechos de autor &copy; 2023 - Raptor Tecnologies SAS</p>
+        <p>Contáctanos:  raptortecnologies73@gmail.com</p>
+    </div>
+</footer>
+</body>
+</html>
+
+

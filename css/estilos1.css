@@ -1,0 +1,402 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background: url(../images/pexels-max-rahubovskiy-6527069.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body{
+  
+  margin-left: -10em;
+  margin-right: 14em;
+}
+
+.pdf{
+  color: #000;
+}
+
+/*
+nav{
+  max-width: 900px;
+  margin: auto;
+  background-color: gray;
+  font-size: 17px;
+  margin-top: 50px;
+  margin-bottom: 3em;
+}
+
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+.menu-horizontal > li > a{
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-horizontal > li:hover{
+  background-color: #444;
+}
+
+.menu-vertical{
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 100;
+}
+
+.menu-horizontal li:hover .menu-vertical{
+  display: block;
+}
+
+.menu-vertical li:hover{
+  background-color: black;
+}
+
+.menu-vertical li a{
+  display: block;
+  color: #fff;
+  padding: 15px 15px 20px;
+  text-decoration: none;
+}
+*/
+
+nav{
+  background-color: rgba(0, 0, 0, 0.814);
+  align-items: center;
+  display: flex;
+  height: 60px;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+}
+
+.jyasistem{
+  color: #fff;
+  padding: 15px;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 30px;
+}
+
+ul li{
+  display: inline;
+  padding: 4px 15px;
+  cursor: pointer;
+}
+ul a:hover{
+  background-color:  #359 ;
+  transition: .5s ;
+}
+
+
+.menu-horizontal li:hover .menu-vertical1{
+  display: block;
+}
+
+
+.menu-horizontal li:hover .menu-vertical2{
+  display: block;
+}
+
+.menu-vertical1{
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 170px;
+  background-color: rgba(0, 0, 0, .5);
+  margin-top: 17px;
+  right: 19.5em;
+  text-align: center;
+  z-index: 100;
+}
+
+.menu-vertical2{
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 170px;
+  background-color: rgba(0, 0, 0, .5);
+  margin-top: 16px;
+  right: 8.3em;
+  text-align: center;
+  z-index: 100;
+}
+
+.menu-horizontal li:hover .menu-vertical1{
+  display: block;
+}
+
+.menu-horizontal li:hover .menu-vertical2{
+  display: block;
+}
+
+
+.menu-vertical1 a:hover{
+  background-color: black;
+}
+
+
+.menu-vertical2 a:hover{
+  background-color: black;
+}
+
+
+.menu-vertical1 li a{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.menu-vertical2 li a{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+b{
+  background-color: #359 ;
+  padding: 5px 2px;
+}
+
+.exit:hover{
+    background-color: rgba(224, 49, 49, 0.406);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container form .fields{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+form .fields .input-field{
+  display: flex;
+  width: calc(100% / 3 - 15px);
+  flex-direction: column;
+  margin: 4px 0;
+}
+
+.input-field label{
+  font-size: 12px;
+  font-weight: 500;
+  color: #2e2e2e;
+}
+
+.input-field input{
+  width: 14em;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border: 2px solid #359;
+  padding: 0 15px;
+  height: 50px;
+  margin: 8px 0;
+  border-radius: 15px;
+  margin-bottom: 1px;
+}
+
+
+.input-field select{
+  width: 14em;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border: 2px solid #359;
+  padding: 0 15px;
+  height: 32px;
+  margin: 8px 0;
+  border-radius: 15px;
+  margin-top: 1px;
+}
+
+
+
+.input-field input:is(:focus, :valid){
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.input-field input[type="date"]{
+  color: #707070;
+}
+
+.input-field input[type="date"]:valid{
+  color: #333;
+}
+
+
+
+
+
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50em;
+    
+  }
+  
+p{
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+  #customers td, #customers th {
+    padding: 8px;
+  }
+  
+  #customers tr{
+    background: #ddd;
+    border-radius: 15px;
+  }
+
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ccc;}
+  
+  #customers th {
+    border-bottom: #000 solid 7px;
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #259;
+    color: white;
+  }
+
+  .container-tabla{
+    width: auto;
+    height: auto;
+    overflow: auto;
+    border-radius: 15px;
+    margin-left: 15em;
+    margin-bottom: 6em;
+  }
+
+  .btn {
+    border-radius: 15px;
+  }
+
+  .input{
+    border-radius: 15px;
+  }
+  
+
+
+  .delete{
+    background-image: url(../images/borrar.png);
+    height: 32px;
+    width: 32px;
+    margin-left: 10px;
+    border: hidden;
+    border-radius: 30px;
+  }
+
+  .update{
+    background-image: url(../images/sincronizar.png);
+    height: 32px;
+    width: 32px;
+    margin-left: 10px;
+    border: hidden;
+    border-radius: 30px;
+  }
+
+  .whats{
+    background-image: url(../images/whatsapp.png);
+    height: 32px;
+    width: 32px;
+    margin-left: 10px;
+    border: hidden;
+    border-radius: 7px;
+  }
+
+  .delete:hover{ transform:scale(1.3);
+  transition:transform .4s;
+}
+
+.update:hover{ transform:scale(1.3);
+  transition:transform .4s;
+}
+
+.whats:hover{ transform:scale(1.3);
+  transition:transform .4s;
+}
+
+
+form .btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  max-width: 200px;
+  width: 70px;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin: 8px 0;
+  margin-bottom: 20px;
+  background-color: #359;
+  transition: all .3s linear;
+  cursor: pointer;
+}
+
+
+form .btn:hover{
+  border: 0;
+background: #359;
+cursor: pointer;
+border: 2px solid #359;
+  background: none;
+  color: #333;
+  font-weight: bold;
+}
+
+form .input{
+outline: none;
+font-size: 14px;
+font-weight: 400;
+color: #333;
+border: 2px solid #359;
+padding: 0 15px;
+height: 30px;
+}
+
+.container-buscar{
+  margin-left: 15em;
+  margin-top: 8em;
+}
+
